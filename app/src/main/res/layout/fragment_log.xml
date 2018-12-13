@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cover_gray">
+
+    <io.weichao.transparent_log.widget.NoDispatchRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" />
+    </io.weichao.transparent_log.widget.NoDispatchRelativeLayout>
+
+    <io.weichao.transparent_log.widget.DraggableFloatingActionButton
+        android:id="@+id/btn_next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="center"
+        android:src="@drawable/btn_log_next"
+        app:fabSize="normal" />
+
+    <io.weichao.transparent_log.widget.DraggableFloatingActionButton
+        android:id="@+id/btn_previous_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_next_page"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="center"
+        android:src="@drawable/btn_log_previous"
+        app:fabSize="normal" />
+
+    <io.weichao.transparent_log.widget.DraggableFloatingActionButton
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_previous_page"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_video_finish"
+        app:fabSize="normal" />
+
+    <io.weichao.transparent_log.widget.DraggableFloatingActionButton
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_exit"
+        android:visibility="gone"
+        app:backgroundTint="#ffffff"
+        app:fabSize="normal" />
+</RelativeLayout>
